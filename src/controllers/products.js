@@ -5,7 +5,7 @@ export const GET_ALL_PRODUCTS = async (req, res) => {
   try {
     const products = await productModel.find();
     res.status(200).json({
-      movies: products,
+      products: products,
     });
   } catch (err) {
     console.log(err);
